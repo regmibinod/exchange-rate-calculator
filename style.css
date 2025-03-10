@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background: linear-gradient(135deg, rgb(73, 52, 69), skyblue); */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url("img/moneyBackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Container Styling */
+#container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+ 
+}
+
+/* Select & Input Fields */
+select, input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+input {
+    background: #fff;
+    color: #333;
+}
+
+select {
+    background: #f1f1f1;
+    color: #333;
+}
+
+/* Exchange Rate Display */
+#swap-and-rate-div {
+    margin: 20px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    font-size: 18px;
+    display: flex;
+    min-width: 40%;
+}
+
+/* Button Styling */
+#swap {
+  background: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 40%;
+    background: url("img/swap.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 32px;
+    height: auto;
+    background-color: white;
+    position: relative;
+}
+
+#swap:hover {
+  opacity: 70%;
+
+}
+
+#rate {
+    color: rgb(93 206 130);
+}
+#logo{
+    width: 140px;
+    border-radius: 50%;
+}
+
+  #swap::after {
+    content: "Swap Currencies"; /* Tooltip text */
+    position: absolute;
+    top: 30px; /* Position above the button */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+
+    font-size: 16px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+  }
+  
+  #swap:hover::after {
+    opacity: 1;
+  }
+  
